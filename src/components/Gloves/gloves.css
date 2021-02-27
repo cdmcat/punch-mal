@@ -1,0 +1,64 @@
+.Gloves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.Gloves .container-left {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.Gloves .container-right {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.Gloves .glove-container {
+  width: 100%;
+  display: flex;
+}
+
+.Gloves .container-left .glove-container {
+  justify-content: flex-start;
+}
+
+.Gloves .container-left .glove-container.active {
+  justify-content: flex-end;
+}
+
+.Gloves .container-right .glove-container {
+  justify-content: flex-end;
+}
+.Gloves .container-right .glove-container.active {
+  justify-content: flex-start;
+}
+
+.mal .Gloves img {
+  width: auto;
+  margin-bottom: 200px;
+}
+@media (max-width: 768px) {
+  .mal .Gloves img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 150px;
+  }
+}
+
+.glove-left {
+  display: block;
+}
+
+.glove-right {
+  transform: scaleX(-1);
+}

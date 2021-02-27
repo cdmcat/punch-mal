@@ -1,0 +1,27 @@
+.FaceSwitch {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.FaceSwitch .face-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+@media (max-width: 768px){
+  .FaceSwitch .face-group {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
