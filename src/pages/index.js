@@ -17,6 +17,7 @@ const IndexPage = () => {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         />
+        <meta name="HandheldFriendly" content="true" />
         <title>Ma Aye Loe</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
