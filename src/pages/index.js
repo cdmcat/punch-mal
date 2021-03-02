@@ -19,7 +19,12 @@ const IndexPage = () => {
         />
         <meta name="HandheldFriendly" content="true" />
         <title>Ma Aye Loe</title>
-        <link rel="canonical" href="http://mysite.com/example" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Ma Aye Loe" />
+        <meta property="og:title" content="Min Aung Hlaing | Ma Aye Loe" />
+        <meta property="og:description" content="Fuck The Coup" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="http://www.ma-aye-loe.com" />
       </Helmet>
       {isGame ? (
         <Game />
