@@ -2,11 +2,17 @@
   background: #fdd846;
   padding: 1rem 0;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
+
 .Selector img {
   margin: 0 2rem;
   max-width: 80px;
 }
+
 .Selector img.active {
   border: 2px solid black;
   padding: 0.5rem;
