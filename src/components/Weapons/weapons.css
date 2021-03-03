@@ -1,4 +1,4 @@
-.Gloves {
+.Weapons {
   position: absolute;
   top: 0;
   left: 0;
@@ -9,46 +9,46 @@
   justify-content: space-between;
 }
 
-.Gloves .container-left {
+.Weapons .container-left {
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.Gloves .container-right {
+.Weapons .container-right {
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.Gloves .glove-container {
+.Weapons .glove-container {
   width: 100%;
   display: flex;
 }
 
-.Gloves .container-left .glove-container {
+.Weapons .container-left .glove-container {
   justify-content: flex-start;
 }
 
-.Gloves .container-left .glove-container.active {
+.Weapons .container-left .glove-container.active {
   justify-content: flex-end;
 }
 
-.Gloves .container-right .glove-container {
+.Weapons .container-right .glove-container {
   justify-content: flex-end;
 }
-.Gloves .container-right .glove-container.active {
+.Weapons .container-right .glove-container.active {
   justify-content: flex-start;
 }
 
-.mal .Gloves img {
+.mal .Weapons img {
   width: auto;
   margin-bottom: 200px;
 }
 @media (max-width: 768px) {
-  .mal .Gloves img {
+  .mal .Weapons img {
     width: 80px;
     height: auto;
     margin-bottom: 150px;
@@ -56,9 +56,15 @@
 }
 
 .glove-left {
-  display: block;
+  display: none;
 }
 
 .glove-right {
+  display: none;
   transform: scaleX(-1);
+}
+
+.glove-left.active,
+.glove-right.active {
+  display: block;
 }

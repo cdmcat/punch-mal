@@ -4,6 +4,7 @@ import Counter from "../../components/Counter"
 import Face from "../../components/Face"
 import LevelUp from "../../components/LevelUp"
 import Loader from "../../components/Loader"
+import Selector from "../../components/Selector"
 import "./game.css"
 
 const Game = () => {
@@ -11,6 +12,9 @@ const Game = () => {
   const [isPunched, setIsPunched] = useState(false)
   const [count, setCount] = useState(0)
   const [level, setLevel] = useState(0)
+  const [currentWeapon, setCurrentWeapon] = useState(0)
+
+  const selectWeapon = index => setCurrentWeapon(index)
 
   const handlePunch = () => {
     setIsPunched(false)
@@ -47,9 +51,11 @@ const Game = () => {
             handlePunch,
             level,
             isPunched,
+            currentWeapon,
           }}
         />
         <Counter count={count} level={level} />
+        <Selector {...{ currentWeapon, selectWeapon }} />
       </div>
       {loading && <Loader />}
     </div>

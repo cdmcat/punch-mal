@@ -3,7 +3,7 @@
 }
 @media(max-width: 768px){
   .Counter {
-    height: 30vh;
+    /* height: 30vh; */
   }
 }
 
