@@ -30,11 +30,13 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build && gh-pages -d public",
+    "deploy": "echo run either deploy:gh or surge", 
+    "deploy:gh": "gatsby build && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "surge": "npm run build && cp ./_CNAME ./public/CNAME && cd public && surge . && cd ..",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
