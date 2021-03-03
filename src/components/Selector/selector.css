@@ -7,6 +7,9 @@
   left: 0;
   z-index: 1;
 }
+.Selector h1{ 
+  color: red;
+}
 .Selector h2{
   margin: .5rem 0 0 0;
 }
