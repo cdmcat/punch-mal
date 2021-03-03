@@ -68,3 +68,12 @@
 .glove-right.active {
   display: block;
 }
+
+.mal .Weapons .glove-container.active img{
+  width: 80px;
+}
+@media (max-width: 768px) {
+  .mal .Weapons .glove-container.active img{
+    width: 60px;
+  }
+}

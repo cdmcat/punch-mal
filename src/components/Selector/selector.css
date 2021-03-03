@@ -4,6 +4,7 @@
 }
 .Selector img {
   margin: 0 2rem;
+  max-width: 80px;
 }
 .Selector img.active {
   border: 2px solid black;
