@@ -1,6 +1,7 @@
 .Selector {
-  padding-top: 1rem;
   background: #fdd846;
+  padding: 1rem 0;
+  width: 100%;
 }
 .Selector img {
   margin: 0 2rem;

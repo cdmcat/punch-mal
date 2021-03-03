@@ -40,9 +40,7 @@ const Game = () => {
 
   return (
     <div className="Game">
-      <h1 className="title">
-        <span>Punch</span> <strong>MAL</strong>
-      </h1>
+      <Selector {...{ currentWeapon, selectWeapon }} />
       <div className="content">
         {!loading && <LevelUp level={level} />}
         <Face
@@ -55,7 +53,6 @@ const Game = () => {
           }}
         />
         <Counter count={count} level={level} />
-        <Selector {...{ currentWeapon, selectWeapon }} />
       </div>
       {loading && <Loader />}
     </div>
