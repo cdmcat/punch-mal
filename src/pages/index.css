@@ -356,6 +356,7 @@ body {
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-text-size-adjust: none;
+  touch-action: manipulation;
 }
 
 .App {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { punch } from "../../utils/audio"
-import Counter from "../../components/Counter"
+import PunchCounter from "../../components/PunchCounter"
 import Face from "../../components/Face"
 import LevelUp from "../../components/LevelUp"
 import Loader from "../../components/Loader"
@@ -40,7 +40,7 @@ const Game = () => {
 
   return (
     <div className="Game">
-      <Selector {...{ currentWeapon, selectWeapon }} />
+      <Selector {...{ currentWeapon, selectWeapon, level }} />
       <div className="content">
         {!loading && <LevelUp level={level} />}
         <Face
@@ -52,7 +52,7 @@ const Game = () => {
             currentWeapon,
           }}
         />
-        <Counter count={count} level={level} />
+        <PunchCounter count={count} />
       </div>
       {loading && <Loader />}
     </div>
