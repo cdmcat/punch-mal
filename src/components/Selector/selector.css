@@ -2,10 +2,13 @@
   background: #fdd846;
   padding: 1rem 0;
   width: 100%;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
 }
 .Selector h1 {
   color: red;
@@ -25,8 +28,11 @@
   padding: 0.5rem;
 }
 
-.Selector .weapons-array {
-  height: 77px;
+.Selector > div{
   display: flex;
-  overflow-x: scroll;
+  justify-content: center;
+  align-items: center;
+}
+.Selector .weapons-array {
+  overflow-x: auto;
 }

@@ -46,6 +46,7 @@
 .mal .Weapons img {
   width: auto;
   margin-bottom: 200px;
+  max-width: 200px;
 }
 @media (max-width: 768px) {
   .mal .Weapons img {
@@ -69,11 +70,11 @@
   display: block;
 }
 
-.mal .Weapons .glove-container.active img{
-    width: 60px;
+.mal .Weapons .glove-container.active img {
+  max-width: 150px;
 }
 @media (max-width: 768px) {
-  .mal .Weapons .glove-container.active img{
-    width: 80px;
+  .mal .Weapons .glove-container.active img {
+    width: 65px;
   }
 }

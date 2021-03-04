@@ -17,7 +17,7 @@ const Selector = ({ currentWeapon, selectWeapon, level }) => {
           />
         ))}
       </div>
-      <div>
+      <div className="display-level">
         {displayLevel === 99 ? (
           <h1 className="level">Level: {displayLevel}</h1>
         ) : (
