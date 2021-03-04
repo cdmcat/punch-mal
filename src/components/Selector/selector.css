@@ -7,19 +7,26 @@
   left: 0;
   z-index: 1;
 }
-.Selector h1{ 
+.Selector h1 {
   color: red;
 }
-.Selector h2{
-  margin: .5rem 0 0 0;
+.Selector h2 {
+  margin: 0.5rem 0 0 0;
 }
 
 .Selector img {
-  margin: 0 2rem;
-  max-width: 60px;
+  margin: 0 0.75rem;
+  max-width: 80px;
+  object-fit: contain;
 }
 
 .Selector img.active {
   border: 2px solid black;
   padding: 0.5rem;
+}
+
+.Selector .weapons-array {
+  height: 77px;
+  display: flex;
+  overflow-x: scroll;
 }

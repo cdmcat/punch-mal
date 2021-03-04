@@ -7,7 +7,7 @@ const Selector = ({ currentWeapon, selectWeapon, level }) => {
   const displayLevel = level >= 10 ? 99 : level + 1
   return (
     <div className="Selector">
-      <div>
+      <div className="weapons-array">
         {weapons.map((weapon, index) => (
           <img
             key={index}
