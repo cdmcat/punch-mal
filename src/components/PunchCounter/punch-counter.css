@@ -1,3 +1,15 @@
 .PunchCounter {
   background: #fdd846;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .PunchCounter {
+    padding: 0 0.5rem;
+  }
+}
+.PunchCounter.red {
+  color: red;
+  font-size: 1.25rem;
 }

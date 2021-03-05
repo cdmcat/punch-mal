@@ -362,7 +362,7 @@ body {
 .App {
   text-align: center;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 75px);
   display: flex;
   overflow: hidden;
 }

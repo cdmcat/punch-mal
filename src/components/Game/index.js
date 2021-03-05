@@ -40,7 +40,7 @@ const Game = () => {
 
   return (
     <div className="Game">
-      <Selector {...{ currentWeapon, selectWeapon, level }} />
+      <Selector {...{ currentWeapon, selectWeapon }} />
       <div className="content">
         {!loading && <LevelUp level={level} />}
         <Face
@@ -52,7 +52,7 @@ const Game = () => {
             currentWeapon,
           }}
         />
-        <PunchCounter count={count} />
+        <PunchCounter {...{ count, level }} />
       </div>
       {loading && <Loader />}
     </div>

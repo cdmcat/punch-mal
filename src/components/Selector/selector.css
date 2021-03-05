@@ -10,9 +10,12 @@
   top: 0;
   left: 0;
 }
-.Selector h1 {
-  color: red;
+@media(max-width: 768px) {
+  .Selector {
+    padding: .5rem 0;
+  }
 }
+
 .Selector h2 {
   margin: 0.5rem 0 0 0;
 }
@@ -22,17 +25,30 @@
   max-width: 80px;
   object-fit: contain;
 }
+@media(max-width: 768px){
+  .Selector img {
+    margin: 0 0.75rem;
+    max-width: 50px;
+    object-fit: contain;
+  }
+}
 
 .Selector img.active {
   border: 2px solid black;
   padding: 0.5rem;
 }
 
-.Selector > div{
+.Selector > div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .Selector .weapons-array {
   overflow-x: auto;
+  position: relative;
+  z-index: 2;
+}
+.Selector .display-level {
+  position: relative;
+  z-index: -1;
 }

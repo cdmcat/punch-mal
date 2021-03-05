@@ -32,9 +32,9 @@
 }
 @media (max-width: 768px) {
   .FaceSwitch img {
-    /* width: auto; */
-    /* height: 100%; */
-    /* max-height: 400px; */
+    width: auto;
+    height: 500px;
+    object-fit: cover;
   }
 }
 

@@ -86,7 +86,7 @@
 }
 @media (max-width: 768px) {
   .mal .Weapons .glove-container.active img {
-    width: 100px;
+    width: 140px;
   }
   .mal .Weapons .glove-container.active .glove-left {
     transform: translateX(0);
