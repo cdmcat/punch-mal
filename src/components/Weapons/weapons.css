@@ -47,6 +47,7 @@
   width: auto;
   margin-bottom: 200px;
   max-width: 200px;
+  object-fit: contain;
 }
 @media (max-width: 768px) {
   .mal .Weapons img {
@@ -70,14 +71,14 @@
 }
 
 @media (max-width: 768px) {
-.glove-right {
-  display: none;
+  .glove-right {
+    display: none;
     transform: translateX(50%) scaleX(-1);
   }
 }
 .glove-left.active,
 .glove-right.active {
-  display: block;
+  display: flex;
 }
 
 .mal .Weapons .glove-container.active img {
@@ -87,10 +88,10 @@
   .mal .Weapons .glove-container.active img {
     width: 100px;
   }
-  .mal .Weapons .glove-container.active .glove-left{
+  .mal .Weapons .glove-container.active .glove-left {
     transform: translateX(0);
   }
-  .mal .Weapons .glove-container.active .glove-right{
+  .mal .Weapons .glove-container.active .glove-right {
     transform: translateX(0) scaleX(-1);
   }
 }

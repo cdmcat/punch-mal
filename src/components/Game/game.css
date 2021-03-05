@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   position: relative;
 }
 
@@ -36,23 +36,6 @@
   width: 100%;
   justify-self: center;
   align-self: center;
-}
-
-.mal img {
-  width: 100%;
-  max-height: 540px;
-  object-fit: contain;
-}
-@media (max-width: 768px) {
-  .mal img {
-    width: auto;
-    height: 100%;
-    max-height: 400px;
-  }
-}
-
-.mal img.is-hidden {
-  display: none;
 }
 
 .counter {
