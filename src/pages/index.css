@@ -362,7 +362,13 @@ body {
 .App {
   text-align: center;
   width: 100vw;
-  height: calc(100vh - 75px);
+  height: 100vh;
   display: flex;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .App {
+    height: calc(100vh - 75px);
+  }
 }

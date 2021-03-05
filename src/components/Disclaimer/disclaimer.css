@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .Disclaimer .container {
     margin: 20px;
     padding: 20px;
@@ -46,7 +46,7 @@
   margin-top: -3rem;
 }
 
-.Disclaimer h1{
+.Disclaimer h1 {
   color: black;
   max-width: 400px;
 }
@@ -56,6 +56,11 @@
   text-align: left;
   line-height: 1.8rem;
   margin-top: -2rem;
+}
+@media(max-width: 768px) {
+  .Disclaimer p {
+    font-size: 12px;
+  }
 }
 
 .Disclaimer button {
