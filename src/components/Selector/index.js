@@ -4,7 +4,6 @@ import weapons from "../../utils/weaponArray"
 import "./selector.css"
 
 const Selector = ({ currentWeapon, selectWeapon, level }) => {
-  const displayLevel = level >= 10 ? 99 : level + 1
   return (
     <div className="Selector">
       <div className="weapons-array">
