@@ -31,7 +31,7 @@
   "scripts": {
     "build": "gatsby build",
     "deploy": "echo run either deploy:gh or surge", 
-    "deploy:gh": "gatsby build && gh-pages -d public",
+    "deploy:gh": "rm -rf public && gatsby build && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
