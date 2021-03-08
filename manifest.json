@@ -2,6 +2,7 @@
   "main.js": "render-page.js",
   "main.js.map": "render-page.js.map",
   "static/boxingGloveCursor.png": "static/boxingGloveCursor-8461312a9bba93008d2e2a56d7b5540f.png",
+  "static/glove.png": "static/glove-ee01ac08b8dbc711876a87e5e3e3b2d7.png",
   "static/mah-default-punched.png": "static/mah-default-punched-6873ee7e53c3ca1ed2fa6d0d5341ff2c.png",
   "static/mah-default.png": "static/mah-default-893f223dd0f7b83bf13185b644943abe.png",
   "static/mah-level-1.png": "static/mah-level-1-3ad8d408fe661cb8dcfebf467f29f23d.png",
@@ -24,5 +25,8 @@
   "static/mah-punched-level-8.png": "static/mah-punched-level-8-0b4244ca2270604ba9c856d85c61e178.png",
   "static/mah-punched-level-9.png": "static/mah-punched-level-9-6bac3805c1a668dbfcd7473cbc3c28a7.png",
   "static/mah-punched-level-99.png": "static/mah-punched-level-99-1417f799b09d738405ee212c4470e468.png",
-  "static/punch-popup.png": "static/punch-popup-4e0acf1bae5e047f690c58488ebd8209.png"
+  "static/pad.png": "static/pad-ce7373e91ede980a140c1947d5a13e14.png",
+  "static/pan.png": "static/pan-58ededae3ecfa0613128ef56df2bbe48.png",
+  "static/punch-popup.png": "static/punch-popup-4e0acf1bae5e047f690c58488ebd8209.png",
+  "static/slipper.png": "static/slipper-206e0f8ca90b6d038b0de74343973e43.png"
 }
