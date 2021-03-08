@@ -382,6 +382,6 @@ body:after {
 
 @media (max-width: 768px) {
   .App {
-    height: calc(100vh - 75px);
+    height: calc(100vh - 110px);
   }
 }
