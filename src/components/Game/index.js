@@ -8,6 +8,7 @@ import Selector from "../../components/Selector"
 import "./game.css"
 
 const Game = () => {
+  console.log(process.env)
   const [loading, setLoading] = useState(true)
   const [isPunched, setIsPunched] = useState(false)
   const [count, setCount] = useState(0)

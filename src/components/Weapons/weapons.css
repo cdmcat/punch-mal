@@ -43,19 +43,6 @@
   justify-content: flex-start;
 }
 
-.mal .Weapons img {
-  width: auto;
-  margin-bottom: 200px;
-  max-width: 200px;
-  object-fit: contain;
-}
-@media (max-width: 768px) {
-  .mal .Weapons img {
-    height: auto;
-    margin-bottom: 150px;
-  }
-}
-
 .glove-left {
   display: none;
 }
@@ -81,13 +68,79 @@
   display: flex;
 }
 
-.mal .Weapons .glove-container.active img {
+/* default should be glove */
+.mal .Weapons img {
+  width: auto;
+  margin-bottom: 200px;
   max-width: 150px;
+  object-fit: contain;
 }
+
+/* pan */
+.mal .Weapons img.pan {
+  max-width: 250px;
+  width: 100%;
+}
+
+/* slipper */
+.mal .Weapons img.slipper {
+  max-width: 250px;
+}
+
 @media (max-width: 768px) {
-  .mal .Weapons .glove-container.active img {
-    width: 140px;
+  .mal .Weapons img {
+    height: auto;
+    margin-bottom: 150px;
   }
+  .mal .Weapons img.pan {
+    max-width: 225px;
+    width: 100%;
+  }
+
+  .mal .Weapons img.slipper {
+    max-width: 200px;
+  }
+
+  /* pan */
+  .mal .Weapons img.pan {
+  }
+}
+
+/*
+* PUNCH STATE !!!
+*/
+
+/* glove */
+.mal .Weapons .glove-container.active img {
+  max-width: 125px;
+}
+
+/* pan */
+.mal .Weapons .glove-container.active img.pan {
+  max-width: 250px;
+}
+
+/* slipper */
+.mal .Weapons .glove-container.active img.slipper {
+  max-width: 200px;
+}
+
+@media (max-width: 768px) {
+  /* gloves */
+  .mal .Weapons .glove-container.active img {
+    max-width: 125px;
+  }
+
+  /* pan */
+  .mal .Weapons .glove-container.active img.pan {
+    max-width: 300px;
+  }
+
+  /* slipper */
+  .mal .Weapons .glove-container.active img.slipper {
+    max-width: 200px;
+  }
+
   .mal .Weapons .glove-container.active .glove-left {
     transform: translateX(0);
   }

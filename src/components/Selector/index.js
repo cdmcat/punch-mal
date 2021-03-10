@@ -10,7 +10,7 @@ const Selector = ({ currentWeapon, selectWeapon, level }) => {
         {weapons.map((weapon, index) => (
           <img
             key={index}
-            src={weapon}
+            src={weapon.src}
             className={`weapon ${currentWeapon === index ? "active" : ""}`}
             onClick={() => selectWeapon(index)}
           />

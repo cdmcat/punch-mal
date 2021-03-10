@@ -24,11 +24,11 @@ const Weapons = ({ count, currentWeapon }) => {
           {weapons.map((weapon, index) => (
             <img
               key={index}
-              className={`glove-left ${
+              className={`glove-left ${weapon.class} ${
                 index === currentWeapon ? "active" : ""
               }`}
               alt="glove left"
-              src={weapon}
+              src={weapon.src}
             />
           ))}
         </div>
@@ -38,11 +38,11 @@ const Weapons = ({ count, currentWeapon }) => {
           {weapons.map((weapon, index) => (
             <img
               key={index}
-              className={`glove-right ${
+              className={`glove-right ${weapon.class} ${
                 index === currentWeapon ? "active" : ""
               }`}
               alt="glove right"
-              src={weapon}
+              src={weapon.src}
             />
           ))}
         </div>
